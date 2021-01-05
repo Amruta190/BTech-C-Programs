@@ -1,0 +1,4 @@
+C language is a case-sensitive language.
+Which means it considers all uppercase letters, lowercase letters, ascii values of the symbols etc.
+Learning C is interesting.
+C language is easy if we practise more and think logically. 
