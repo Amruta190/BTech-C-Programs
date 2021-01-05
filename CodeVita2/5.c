@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int t,time=0,i,N,arr[10000],barr[10000],darr[10000],k;
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
+    {
+        scanf("%d",&N);
+       for(i=1;i<=N;i++)
+       {
+           scanf("%d",&arr[i]);
+       }
+       for(i=1;i<=N;i++)
+       {
+           barr[i]=i+1;
+       }
+       for(i=1;i<=N;i++)
+       {
+           k=arr[i];
+           darr[k]=barr[i];
+       }
+       for(i=1;i<=N;i++)
+       {
+           if(darr[i]==barr[i])
+           break;
+           else
+           {
+              for(i=1;i<=N;i++)
+                {
+                    k=arr[i];
+                    darr[k]=barr[i];
+                    time++;
+                } 
+           }
+       }
+       printf("%d",time);
+    }
+}
